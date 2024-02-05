@@ -1,6 +1,11 @@
 {
-    "name": "Default",
-    "story_string": "{{#if system}}{{system}}\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{char}}'s personality: {{personality}}\n{{/if}}{{#if scenario}}Scenario: {{scenario}}\n{{/if}}{{#if wiAfter}}{{wiAfter}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}",
-    "chat_start": "***",
-    "example_separator": "***"
+    "story_string": "\"### Instruction:\\nWrite {{char}}'s next reply in a fictional roleplay chat between {{user}} and {{char}}. Use the provided character sheet and example dialogue for formatting direction and character speech patterns.\\n\\n{{#if system}}{{system}}\\n\\n{{/if}}{{#if wiBefore}}{{wiBefore}}\\n\\n{{/if}}Description of {{char}}:\\n{{#if description}}{{description}}\\n{{/if}}{{#if personality}}{{char}}'s personality: {{personality}}\\n\\n{{/if}}{{#if scenario}}Scenario: {{scenario}}\\n\\n{{/if}}{{#if persona}}Description of {{user}}: {{persona}}\\n\\n{{/if}}Play the role of {{char}}\\n\\n{{#if wiAfter}}{{wiAfter}}\\n{{/if}}\"",
+    "example_separator": "\"Example roleplay chat:\"",
+    "chat_start": "\"Taking the above information into consideration,\\nyou must engage in a roleplay conversation with {{user}} below this line.\\nDo not write {{user}}'s dialogue lines in your responses.\\n\"",
+    "use_stop_strings": false,
+    "always_force_name2": true,
+    "trim_sentences": true,
+    "include_newline": true,
+    "single_line": false,
+    "name": "Default"
 }
